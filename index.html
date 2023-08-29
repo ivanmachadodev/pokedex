@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main>
+        <button type="button" id="cargarPokemon">¡Elige a tu Pokemon!</button>
+
+        <section id="pokedex">
+
+        </section>
+
+    </main>
+
+    <script>
+        window.onload = function () {
+            Swal.fire({
+                title: 'Pokedex',
+                text: 'Puedes elegir tu pokemon favorito y armar tu coleccion. ¡Empeza ya!',
+                confirmButtonText: 'Comenzar',
+                imageUrl: 'https://img.ex.co/image/upload/ar_1.8867924528301887,c_crop/q_auto:best,f_auto,fl_lossy,w_640,c_limit,dpr_1/v1614519511/ho2vb7pejn2yfsrmhypx.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            });
+        }
+    </script>
+
+
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
